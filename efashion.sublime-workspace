@@ -1,0 +1,349 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"de",
+				"default"
+			],
+			[
+				"cla",
+				"cleaned_data"
+			],
+			[
+				"stat",
+				"static"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"p",
+				"p\tTag"
+			],
+			[
+				"STAT",
+				"staticfiles"
+			],
+			[
+				"url",
+				"urlpatterns"
+			],
+			[
+				"c",
+				"contrib"
+			],
+			[
+				"back",
+				"background-image\tproperty"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"TEM",
+				"template"
+			],
+			[
+				"BA",
+				"BASE_DIR"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"h",
+				"home"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"d",
+				"django"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/efashion/settings.py",
+			"settings":
+			{
+				"buffer_size": 3094,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/ASUS/Dev/efashion",
+		"/C/Users/ASUS/Dev/efashion/src",
+		"/C/Users/ASUS/Dev/efashion/src/efashion"
+	],
+	"file_history":
+	[
+		"/C/Users/ASUS/Dev/vertex/src/vertex1/settings.py",
+		"/C/Users/ASUS/Dev/vertex/src/categories/models.py",
+		"/C/Users/ASUS/Dev/vertex/src/categories/forms.py",
+		"/C/Users/ASUS/Dev/vertex/src/categories/templates/categories/categories_detail.html",
+		"/C/Users/ASUS/Dev/vertex/src/brands/templates/brands/brands_detail.html",
+		"/C/Users/ASUS/Dev/vertex/src/brands/models.py",
+		"/C/Users/ASUS/Dev/vertex/src/brands/views.py",
+		"/C/Users/ASUS/Dev/vertex/src/vertex1/urls.py",
+		"/C/Users/ASUS/Dev/vertex/src/brands/templates/brands_detail.html",
+		"/C/Users/ASUS/Dev/vertex/src/categories/views.py",
+		"/C/Users/ASUS/Dev/vertex/src/categories/templates/categories/categories_create.html",
+		"/C/Users/ASUS/Dev/vertex/src/templates/base.html",
+		"/C/Users/ASUS/Dev/vertex/src/templates/Categories/detail.html",
+		"/C/Users/ASUS/Dev/vertex/src/templates/product.html",
+		"/C/Users/ASUS/Dev/vertex/src/pages/views.py",
+		"/C/Users/ASUS/Dev/vertex/src/categories/admin.py",
+		"/C/Users/ASUS/Dev/vertex/src/templates/home.html",
+		"/C/Users/ASUS/Dev/vertex/src/templates/about.html",
+		"/C/Users/ASUS/Dev/vertex/src/templates/copy.html",
+		"/C/Users/ASUS/Dev/vertex/src/templates/design.css",
+		"/C/Users/ASUS/Dev/vertex/src/pages/admin.py",
+		"/C/Users/ASUS/Dev/vertex/src/pages/models.py",
+		"/C/Users/ASUS/Dev/cse327/src/evaly2/settings.py",
+		"/C/Users/ASUS/Dev/cse327/src/Brands/admin.py",
+		"/C/Users/ASUS/Dev/cse327/src/Brands/models.py",
+		"/C/Users/ASUS/Dev/cse327/src/manage.py",
+		"/C/xampp/htdocs/job-portal/meet.php",
+		"/C/xampp/htdocs/cse299/pollvote",
+		"/C/xampp/htdocs/cse299/saveJob.php",
+		"/C/xampp/htdocs/cse299/getvote.php",
+		"/C/xampp/htdocs/cse299/footer.php",
+		"/C/xampp/htdocs/cse299/employerAccount.php",
+		"/C/xampp/htdocs/cse299/deletePost.php",
+		"/C/xampp/htdocs/cse299/connect.php",
+		"/C/xampp/htdocs/cse299/categoryOptions.php",
+		"/C/xampp/htdocs/cse299/authorizeSeeker.php",
+		"/C/xampp/htdocs/cse299/authorizeEmployer.php",
+		"/C/xampp/htdocs/cse299/applyJob.php",
+		"/C/xampp/htdocs/cse299/Appliedjobs.php",
+		"/C/xampp/htdocs/cse299/acceptApplication.php",
+		"/C/xampp/htdocs/cse299/ViewApplicants.php",
+		"/C/xampp/htdocs/cse299/signinEmployerModals.php",
+		"/C/xampp/htdocs/cse299/signin.php",
+		"/C/xampp/htdocs/cse299/seekerAccount.php",
+		"/C/xampp/htdocs/cse299/rejectApplication.php",
+		"/C/xampp/htdocs/cse299/registerJobseeker.php",
+		"/C/xampp/htdocs/cse299/registerEmployer.php",
+		"/C/xampp/htdocs/cse299/postjob.php",
+		"/C/xampp/htdocs/cse299/plivesearch.php",
+		"/C/xampp/htdocs/cse299/navBar.php",
+		"/C/xampp/htdocs/cse299/Messages.php",
+		"/C/xampp/htdocs/cse299/meet.php",
+		"/C/xampp/htdocs/cse299/logout.php",
+		"/C/xampp/htdocs/cse299/livesearch.php",
+		"/C/xampp/htdocs/cse299/industryOptions.php",
+		"/C/xampp/htdocs/cse299/index.php",
+		"/C/Users/ASUS/Dev/trydjango/src/templates/base.html",
+		"/C/Users/ASUS/Dev/trydjango/src/trydjango/urls.py",
+		"/C/Users/ASUS/Dev/trydjango/src/templates/homepage.html",
+		"/C/Users/ASUS/Dev/trydjango/src/templates/about.html",
+		"/C/Users/ASUS/Dev/trydjango/src/trydjango/settings.py",
+		"/C/Users/ASUS/Dev/trydjango/src/pages/views.py",
+		"/C/Users/ASUS/Dev/trydjango/src/templates/myphoto.jpg",
+		"/C/Users/ASUS/Dev/trydjango/src/templates/contactus.html",
+		"/C/Users/ASUS/Dev/trydjango/src/product/models.py",
+		"/C/Users/ASUS/Dev/trydjango/src/product/admin.py",
+		"/C/Users/ASUS/Dev/trydjango/trydjango.sublime-project",
+		"/C/Users/ASUS/Dev/trydjango/src/manage.py",
+		"/F/NSU/Spring 2019/CSE323/latest CSE323 project/main.cpp",
+		"/C/Users/ASUS/Dev/trydjango/src/db.sqlite3",
+		"/C/Users/ASUS/Dev/trydjango/src/trydjango/trydjango/settings.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/efashion/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3094,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1990,
+								1990
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "efashion.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
