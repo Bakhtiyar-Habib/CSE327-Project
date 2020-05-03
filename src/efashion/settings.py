@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     #own
     'categories',
     'brands',
+    'pages',
 ]
 
 MIDDLEWARE = [
