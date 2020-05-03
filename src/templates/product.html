@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+a:hover {
+	color: #F0B6B5;
+}
+
+
+
+.column {
+  float: left;
+  
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  margin: 100px 0px 0px 0px;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+</style>
+</head>
+
+
+<h1 align="center"> Our Products </h1>
+
+<body>
+
+
+<!-- the 3 parts for Categories, Brands, and Shops -->
+<div align = "center "class="row"> 
+  <div class="column">
+  	<a href="http://127.0.0.1:8000/products/categories"> <b> Categories </b> </a>
+  </div>
+  <div class="column">
+  	<a href="http://127.0.0.1:8000/products/categories"> <b> Brands </b> </a>
+  </div>
+  <div class="column">
+  	<a href="http://127.0.0.1:8000/products/categories"> <b> Shops </b> </a>
+  </div>
+</div>
+
+
+</body>
+
+
+
+{% endblock %}
+
+</html>
