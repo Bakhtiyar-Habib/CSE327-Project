@@ -20,6 +20,7 @@ from pages import views
 from pages.views import home_view
 from pages.views import about_view
 from pages.views import product_view
+from pages.views import allshops_view
 
 
 urlpatterns = [
@@ -27,5 +28,6 @@ urlpatterns = [
     path('home/', home_view, name='home'),
     path('about/', about_view),
     path('products/', product_view),
+    path('allshops/', allshops_view),
     path('admin/', admin.site.urls),
 ]
