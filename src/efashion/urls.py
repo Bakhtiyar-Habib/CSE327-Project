@@ -22,6 +22,7 @@ from pages.views import about_view
 from pages.views import product_view
 from pages.views import allshops_view
 from pages.views import contact_view
+from categories.views import category_detail_view, category_list_view
 
 
 urlpatterns = [
@@ -31,5 +32,9 @@ urlpatterns = [
     path('products/', product_view),
     path('allshops/', allshops_view),
     path('contact/', contact_view),
+
+    path('products/categories/', category_list_view),
+    path('products/create/list/', category_list_view),
+    
     path('admin/', admin.site.urls),
 ]
