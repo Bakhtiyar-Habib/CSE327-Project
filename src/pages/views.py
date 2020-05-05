@@ -18,3 +18,5 @@ def product_view(request, *args, **kwargs):
 def allshops_view(request, *args, **kwargs):
 	return render(request, "allshops.html", {})
 
+def contact_view(request, *args, **kwargs):
+	return render(request, "contact.html", {})
