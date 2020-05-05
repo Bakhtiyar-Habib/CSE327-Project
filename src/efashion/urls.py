@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from pages import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from pages.views import home_view
 from pages.views import about_view
@@ -23,6 +24,9 @@ from pages.views import product_view
 from pages.views import allshops_view
 from pages.views import contact_view
 from categories.views import category_detail_view, category_list_view
+
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 urlpatterns = [
@@ -35,6 +39,9 @@ urlpatterns = [
 
     path('products/categories/', category_list_view),
     path('products/create/list/', category_list_view),
-    
+
     path('admin/', admin.site.urls),
 ]
+
+urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
