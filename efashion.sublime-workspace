@@ -79,52 +79,7 @@
 			"file": "src/efashion/settings.py",
 			"settings":
 			{
-				"buffer_size": 3213,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/templates/base.html",
-			"settings":
-			{
-				"buffer_size": 2174,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/pages/views.py",
-			"settings":
-			{
-				"buffer_size": 492,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/templates/allshops.html",
-			"settings":
-			{
-				"buffer_size": 133,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/shops/models.py",
-			"settings":
-			{
-				"buffer_size": 297,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/shops/admin.py",
-			"settings":
-			{
-				"buffer_size": 116,
+				"buffer_size": 3342,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -133,7 +88,34 @@
 			"file": "src/efashion/urls.py",
 			"settings":
 			{
-				"buffer_size": 1105,
+				"buffer_size": 1622,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/categories/templates/categories/categories_list.html",
+			"settings":
+			{
+				"buffer_size": 1608,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/categories/views.py",
+			"settings":
+			{
+				"buffer_size": 473,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/categories/models.py",
+			"settings":
+			{
+				"buffer_size": 314,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -175,6 +157,8 @@
 		"/C/Users/ASUS/Dev/efashion/src",
 		"/C/Users/ASUS/Dev/efashion/src/brands",
 		"/C/Users/ASUS/Dev/efashion/src/categories",
+		"/C/Users/ASUS/Dev/efashion/src/categories/templates",
+		"/C/Users/ASUS/Dev/efashion/src/categories/templates/categories",
 		"/C/Users/ASUS/Dev/efashion/src/efashion",
 		"/C/Users/ASUS/Dev/efashion/src/efashion/__pycache__",
 		"/C/Users/ASUS/Dev/efashion/src/pages",
@@ -183,10 +167,15 @@
 	],
 	"file_history":
 	[
-		"/C/Users/ASUS/Dev/efashion/src/templates/home.html",
-		"/C/Users/ASUS/Dev/efashion/src/pages/views.py",
-		"/C/Users/ASUS/Dev/efashion/src/templates/product.html",
 		"/C/Users/ASUS/Dev/efashion/src/templates/base.html",
+		"/C/Users/ASUS/Dev/efashion/src/categories/templates/categories/categories_detail.html",
+		"/C/Users/ASUS/Dev/efashion/src/pages/views.py",
+		"/C/Users/ASUS/Dev/efashion/src/templates/contact.html",
+		"/C/Users/ASUS/Dev/efashion/src/shops/admin.py",
+		"/C/Users/ASUS/Dev/efashion/src/shops/models.py",
+		"/C/Users/ASUS/Dev/efashion/src/templates/allshops.html",
+		"/C/Users/ASUS/Dev/efashion/src/templates/home.html",
+		"/C/Users/ASUS/Dev/efashion/src/templates/product.html",
 		"/C/Users/ASUS/Dev/efashion/src/templates/about.html",
 		"/C/Users/ASUS/Dev/efashion/src/brands/admin.py",
 		"/C/Users/ASUS/Dev/efashion/src/brands/models.py",
@@ -266,7 +255,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 31.0
 	},
 	"find_in_files":
 	{
@@ -297,7 +286,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -306,15 +295,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3213,
+						"buffer_size": 3342,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1150,
-								1150
+								3342,
+								3342
 							]
 						],
 						"settings":
@@ -324,27 +313,57 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 462.0,
+						"translation.y": 1833.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/templates/base.html",
+					"file": "src/efashion/urls.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2174,
+						"buffer_size": 1622,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								812,
-								812
+								1622,
+								1622
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 66.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/categories/templates/categories/categories_list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								846,
+								846
 							]
 						],
 						"settings":
@@ -354,27 +373,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 726.0,
+						"translation.y": 437.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/pages/views.py",
+					"buffer": 3,
+					"file": "src/categories/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 492,
+						"buffer_size": 473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								479,
-								479
+								66,
+								66
 							]
 						],
 						"settings":
@@ -385,29 +404,29 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "src/templates/allshops.html",
+					"buffer": 4,
+					"file": "src/categories/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 133,
+						"buffer_size": 314,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								77,
-								77
+								306,
+								306
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -415,103 +434,17 @@
 					},
 					"stack_index": 2,
 					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/shops/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 297,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								297,
-								297
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/shops/admin.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 116,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								116,
-								116
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/efashion/urls.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1105,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1058,
-								1058
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 31.0
 	},
 	"input":
 	{
-		"height": 39.0
+		"height": 43.0
 	},
 	"layout":
 	{
@@ -544,7 +477,7 @@
 	"project": "efashion.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
