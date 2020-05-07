@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'brands',
     'pages',
     'shops',
+    'formal',
 ]
 
 MIDDLEWARE = [
