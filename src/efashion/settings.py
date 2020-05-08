@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'formal',
     'denim',
     'casual',
+    'traditional',
 ]
 
 MIDDLEWARE = [
