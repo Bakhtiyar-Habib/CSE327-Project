@@ -28,6 +28,8 @@ from brands.views import brand_list_view
 from shops.views import shop_list_view
 
 from formal.views import formal_list_view
+from denim.views import denim_list_view
+from casual.views import casual_list_view
 
 from django.conf.urls.static import static
 from django.conf import settings
@@ -47,6 +49,8 @@ urlpatterns = [
     path('products/shops/', shop_list_view),
 
     path('products/categories/formal', formal_list_view),
+    path('products/categories/denim', denim_list_view),
+    path('products/categories/casual', casual_list_view),
 
 
     path('admin/', admin.site.urls),

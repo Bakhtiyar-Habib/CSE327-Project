@@ -45,7 +45,10 @@ INSTALLED_APPS = [
     'brands',
     'pages',
     'shops',
+
     'formal',
+    'denim',
+    'casual',
 ]
 
 MIDDLEWARE = [
