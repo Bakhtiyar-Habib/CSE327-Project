@@ -31,6 +31,7 @@ from formal.views import formal_list_view
 from denim.views import denim_list_view
 from casual.views import casual_list_view
 from traditional.views import traditional_list_view
+from footwear.views import footwear_list_view
 
 from django.conf.urls.static import static
 from django.conf import settings
@@ -53,7 +54,7 @@ urlpatterns = [
     path('products/categories/denim', denim_list_view),
     path('products/categories/casual', casual_list_view),
     path('products/categories/traditional', traditional_list_view),
-
+    path('products/categories/footwear', footwear_list_view),
 
     path('admin/', admin.site.urls),
 ]

@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'denim',
     'casual',
     'traditional',
+    'footwear',
 ]
 
 MIDDLEWARE = [

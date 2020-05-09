@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* Float four columns side by side */
+  .column {
+      float: left;
+      width: 20%;
+      padding: 5px 5px;
+  }
+
+/* Remove extra left and right margins, due to padding */
+  .row {margin: 10px 10px;}
+
+/* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+/* Responsive columns */
+  @media screen and (max-width: 600px) {
+      .column {
+      width: 90%;
+      display: block;
+      margin-bottom: 30px;
+      }
+  }
+
+/* Style the counter cards */
+  .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      text-align: center;
+      background-color: #f1f1f1;
+  }
+
+  img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+  }
+</style>
+</head>
+
+
+<body>
+
+<h2 align = "center">Footwear</h2>
+<p align = "center">Browse through our Footwear products</p>
+
+<p> <b>Men</b> </p>
+
+{% for instance in object_listmen %}
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3> {{ instance.title }} </h3>
+      <p> Brand: {{ instance.brand }} <br />
+        <a href="http://127.0.0.1:8000/products/categories/formal"> <b> View & Buy Product </b> </a> <!-- use instance.link to place correct url -->
+      </p>
+      <img src="{{ instance.photo.url }}"> <!-- use instance.photo.url to place correct photo -->
+    </div>
+  </div>
+  
+
+{% endfor %}
+
+</body>
+
+<br>
+
+<body>
+
+<p> <b>Women</b> </p>
+
+{% for instance in object_listwomen %}
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3> {{ instance.title }} </h3>
+      <p> Brand: {{ instance.brand }} <br />
+        <a href="http://127.0.0.1:8000/products/categories/formal"> <b> View & Buy Product </b> </a> <!-- use instance.url to place correct url -->
+      </p>
+      <img src="{{ instance.photo.url }}"> <!-- use instance.photo.url to place correct photo -->
+    </div>
+  </div>
+  
+
+{% endfor %}
+
+
+</body>
+
+{% endblock %}
+
