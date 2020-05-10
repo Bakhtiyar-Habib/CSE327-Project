@@ -107,7 +107,26 @@
 
 {% endfor %}
 
+</body>
 
+<body>
+
+<h4> Brands </h4>
+  {% for instance in list_brands %}
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3> {{ instance.title }} </h3>
+      <p> {{ instance.description }} <br />
+        <a href="{{ instance.link }}"> <b> View Brand </b> </a> <!-- use instance.url to place correct url -->
+      </p>
+      <img src="{{ instance.photo.url }}"> <!-- use instance.photo.url to place correct photo -->
+    </div>
+  </div>
+  
+
+{% endfor %}
 </body>
 
 {% endblock %}

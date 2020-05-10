@@ -3,8 +3,6 @@ from .models import Brands
 # Create your views here.
 
 
-
-
 def brand_list_view(request):
 	query_set = Brands.objects.all()
 	context = {
