@@ -24,7 +24,9 @@ from pages.views import product_view
 from pages.views import allshops_view
 from pages.views import contact_view
 from categories.views import category_detail_view, category_list_view
-from brands.views import brand_list_view
+
+from brands.views import brand_list_view, levis_detail_view, everlane_detail_view, marksandspencer_detail_view
+
 from shops.views import shop_list_view
 
 from formal.views import formal_list_view
@@ -55,6 +57,11 @@ urlpatterns = [
     path('products/categories/casual', casual_list_view),
     path('products/categories/traditional', traditional_list_view),
     path('products/categories/footwear', footwear_list_view),
+
+    #brands
+    path('products/brands/levis', levis_detail_view),
+    path('products/brands/everlane', everlane_detail_view),
+    path('products/brands/marksandspencer', marksandspencer_detail_view),
 
     path('admin/', admin.site.urls),
 ]

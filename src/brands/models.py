@@ -7,3 +7,13 @@ class Brands(models.Model):
 	photo = models.ImageField(default = "default.jpg", blank=True)
 	categoryname = models.CharField(max_length=120)
 	link = models.CharField(max_length=120, blank = True)
+
+
+class Brands_detail(models.Model):
+	brand_name = models.CharField(max_length=120)
+	title = models.CharField(max_length=120)
+	photo = models.ImageField(default = "default.jpg", blank=True)
+	price = models.IntegerField(blank=True)
+	categoryname = models.CharField(max_length=120)
+	link = models.CharField(max_length=120, blank = True)
+

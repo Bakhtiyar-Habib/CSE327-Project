@@ -62,8 +62,8 @@
 
 <body>
 
-<h2 align = "center">Brands</h2>
-<p align = "center">Browse through our Brands</p>
+<h2 align = "center">Levis</h2>
+<p align = "center">Browse through Levis Products</p>
 
 
 
@@ -73,8 +73,9 @@
   <div class="column">
     <div class="card">
       <h3> {{ instance.title }} </h3>
-      <p>{{ instance.description}} <br />
-        <a href="{{ instance.link }}"> <b> View Products </b> </a> <!-- use instance.link to place correct url -->
+      <p>
+        <a href="{{ instance.link }}"> <b> View Product </b> </a> <br /> <!-- use instance.link to place correct url -->
+        Price: {{ instance.price }}
       </p>
       <img src="{{ instance.photo.url }}"> <!-- use instance.photo.url to place correct photo -->
     </div>
@@ -86,5 +87,3 @@
 </body>
 
 {% endblock %}
-
-
