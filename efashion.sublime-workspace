@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"fit",
+				"fitelegance_detail_view"
+			],
+			[
+				"qu",
+				"query_set2"
+			],
+			[
+				"object",
+				"object_listmen"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"in",
+				"instance"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"Br",
+				"Brands_detail"
+			],
+			[
+				"B",
+				"Brands_detail"
+			],
+			[
 				"denim",
 				"denim"
 			],
@@ -38,10 +70,6 @@
 			[
 				"stat",
 				"static"
-			],
-			[
-				"in",
-				"input\tTag"
 			],
 			[
 				"p",
@@ -88,10 +116,6 @@
 				"home"
 			],
 			[
-				"re",
-				"request"
-			],
-			[
 				"d",
 				"django"
 			]
@@ -103,16 +127,7 @@
 			"file": "src/efashion/urls.py",
 			"settings":
 			{
-				"buffer_size": 2320,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/brands/models.py",
-			"settings":
-			{
-				"buffer_size": 349,
+				"buffer_size": 2684,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -121,34 +136,42 @@
 			"file": "src/brands/views.py",
 			"settings":
 			{
-				"buffer_size": 268,
+				"buffer_size": 1794,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/formal/views.py",
+			"file": "src/brands/templates/brands/fitelegance_list.html",
 			"settings":
 			{
-				"buffer_size": 495,
+				"buffer_size": 2125,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/traditional/views.py",
+			"file": "src/denim/templates/denim/denim_list.html",
 			"settings":
 			{
-				"buffer_size": 531,
+				"buffer_size": 2633,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/brands/templates/brands/levis_list.html",
+			"settings":
+			{
+				"buffer_size": 2111,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/formal/templates/formal/formal_list.html",
+			"file": "src/brands/templates/brands/marksandspencer_list.html",
 			"settings":
 			{
-				"buffer_size": 2647,
+				"buffer_size": 2119,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -206,6 +229,7 @@
 		"/C/Users/ASUS/Dev/efashion/src/footwear/templates",
 		"/C/Users/ASUS/Dev/efashion/src/footwear/templates/footwear",
 		"/C/Users/ASUS/Dev/efashion/src/formal",
+		"/C/Users/ASUS/Dev/efashion/src/formal/migrations",
 		"/C/Users/ASUS/Dev/efashion/src/formal/templates",
 		"/C/Users/ASUS/Dev/efashion/src/formal/templates/formal",
 		"/C/Users/ASUS/Dev/efashion/src/pages",
@@ -218,6 +242,21 @@
 	],
 	"file_history":
 	[
+		"/C/Users/ASUS/Dev/efashion/src/brands/models.py",
+		"/C/Users/ASUS/Dev/efashion/src/brands/templates/brands/everlane_list.html",
+		"/C/Users/ASUS/Dev/efashion/src/casual/models.py",
+		"/C/Users/ASUS/Dev/efashion/src/brands/templates/brands/marksandspencer_list.html",
+		"/C/Users/ASUS/Dev/efashion/src/denim/models.py",
+		"/C/Users/ASUS/Dev/efashion/src/footwear/models.py",
+		"/C/Users/ASUS/Dev/efashion/src/traditional/models.py",
+		"/C/Users/ASUS/Dev/efashion/src/formal/models.py",
+		"/C/Users/ASUS/Dev/efashion/src/formal/migrations/0003_auto_20200512_1042.py",
+		"/C/Users/ASUS/Dev/efashion/src/brands/templates/brands/brands_list.html",
+		"/C/Users/ASUS/Dev/efashion/src/brands/admin.py",
+		"/C/Users/ASUS/Dev/efashion/src/brands/templates/brands/levis_list.html",
+		"/C/Users/ASUS/Dev/efashion/src/formal/templates/formal/formal_list.html",
+		"/C/Users/ASUS/Dev/efashion/src/traditional/views.py",
+		"/C/Users/ASUS/Dev/efashion/src/formal/views.py",
 		"/C/Users/ASUS/Dev/efashion/src/traditional/templates/traditional/traditional_list.html",
 		"/C/Users/ASUS/Dev/efashion/src/footwear/views.py",
 		"/C/Users/ASUS/Dev/efashion/src/footwear/templates/footwear/footwear_list.html",
@@ -225,24 +264,15 @@
 		"/C/Users/ASUS/Dev/efashion/src/denim/templates/denim/denim_list.html",
 		"/C/Users/ASUS/Dev/efashion/src/denim/views.py",
 		"/C/Users/ASUS/Dev/efashion/src/casual/templates/casual/casual_list.html",
-		"/C/Users/ASUS/Dev/efashion/src/brands/templates/brands/brands_list.html",
 		"/C/Users/ASUS/Dev/efashion/src/categories/templates/categories/categories_list.html",
 		"/C/Users/ASUS/Dev/efashion/src/brands/tests.py",
-		"/C/Users/ASUS/Dev/efashion/src/footwear/models.py",
-		"/C/Users/ASUS/Dev/efashion/src/traditional/models.py",
-		"/C/Users/ASUS/Dev/efashion/src/traditional/views.py",
 		"/C/Users/ASUS/Dev/efashion/src/formal/admin.py",
 		"/C/Users/ASUS/Dev/efashion/src/footwear/admin.py",
 		"/C/Users/ASUS/Dev/efashion/src/efashion/settings.py",
-		"/C/Users/ASUS/Dev/efashion/src/formal/views.py",
 		"/C/Users/ASUS/Dev/efashion/src/traditional/admin.py",
-		"/C/Users/ASUS/Dev/efashion/src/formal/models.py",
-		"/C/Users/ASUS/Dev/efashion/src/casual/models.py",
 		"/C/Users/ASUS/Dev/efashion/src/casual/admin.py",
 		"/C/Users/ASUS/Dev/efashion/src/casual/template/casual/casual_list.html",
-		"/C/Users/ASUS/Dev/efashion/src/formal/templates/formal/formal_list.html",
 		"/C/Users/ASUS/Dev/efashion/src/denim/admin.py",
-		"/C/Users/ASUS/Dev/efashion/src/denim/models.py",
 		"/C/Users/ASUS/Dev/efashion/src/categories/models.py",
 		"/C/Users/ASUS/Dev/efashion/src/categories/views.py",
 		"/C/Users/ASUS/Dev/efashion/src/formal/urls.py",
@@ -261,8 +291,6 @@
 		"/C/Users/ASUS/Dev/efashion/src/templates/allshops.html",
 		"/C/Users/ASUS/Dev/efashion/src/templates/home.html",
 		"/C/Users/ASUS/Dev/efashion/src/templates/about.html",
-		"/C/Users/ASUS/Dev/efashion/src/brands/admin.py",
-		"/C/Users/ASUS/Dev/efashion/src/brands/models.py",
 		"/C/Users/ASUS/Dev/efashion/src/categories/admin.py",
 		"/C/Users/ASUS/Dev/vertex/src/vertex1/settings.py",
 		"/C/Users/ASUS/Dev/vertex/src/categories/models.py",
@@ -369,7 +397,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -378,15 +406,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2320,
+						"buffer_size": 2684,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2149,
-								2149
+								2470,
+								2497
 							]
 						],
 						"settings":
@@ -396,83 +424,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 488.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/brands/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 349,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								349,
-								349
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/brands/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 268,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								197,
-								197
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 612.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "src/formal/views.py",
+					"buffer": 1,
+					"file": "src/brands/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 495,
+						"buffer_size": 1794,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								395,
-								420
+								1488,
+								1511
 							]
 						],
 						"settings":
@@ -480,55 +452,27 @@
 							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/traditional/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 531,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								450,
-								450
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 520.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "src/formal/templates/formal/formal_list.html",
+					"buffer": 2,
+					"file": "src/brands/templates/brands/fitelegance_list.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2647,
+						"buffer_size": 2125,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2155,
-								2629
+								1099,
+								1099
 							]
 						],
 						"settings":
@@ -538,7 +482,97 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1919.0,
+						"translation.y": 1335.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/denim/templates/denim/denim_list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2131,
+								2131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1819.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/brands/templates/brands/levis_list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2111
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1477.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/brands/templates/brands/marksandspencer_list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 984.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,

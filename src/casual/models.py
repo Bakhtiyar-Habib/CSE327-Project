@@ -7,6 +7,7 @@ class CasualMenT(models.Model):
 	photo = models.ImageField(default = "default.jpg", blank=True)
 	brand = models.CharField(max_length=120, blank = True)
 	shop = models.CharField(max_length=120, blank = True)
+	price = models.IntegerField(blank=True, default=0)
 	url = models.CharField(max_length=120, blank = True)
 
 class CasualWomenT(models.Model):
@@ -15,6 +16,7 @@ class CasualWomenT(models.Model):
 	photo = models.ImageField(default = "default.jpg", blank=True)
 	brand = models.CharField(max_length=120, blank = True)
 	shop = models.CharField(max_length=120, blank = True)
+	price = models.IntegerField(blank=True, default=0)
 	url = models.CharField(max_length=120, blank = True)
 
 class CasualMenPant(models.Model):
@@ -23,6 +25,7 @@ class CasualMenPant(models.Model):
 	photo = models.ImageField(default = "default.jpg", blank=True)
 	brand = models.CharField(max_length=120, blank = True)
 	shop = models.CharField(max_length=120, blank = True)
+	price = models.IntegerField(blank=True, default=0)
 	url = models.CharField(max_length=120, blank = True)
 
 class CasualWomenPant(models.Model):
@@ -31,4 +34,5 @@ class CasualWomenPant(models.Model):
 	photo = models.ImageField(default = "default.jpg", blank=True)
 	brand = models.CharField(max_length=120, blank = True)
 	shop = models.CharField(max_length=120, blank = True)
+	price = models.IntegerField(blank=True, default=0)
 	url = models.CharField(max_length=120, blank = True)

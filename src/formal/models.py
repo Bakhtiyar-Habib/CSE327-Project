@@ -7,6 +7,7 @@ class FormalMen(models.Model):
 	photo = models.ImageField(default = "default.jpg", blank=True)
 	brand = models.CharField(max_length=120, blank = True)
 	shop = models.CharField(max_length=120, blank = True)
+	price = models.IntegerField(blank=True, default=0)
 	url = models.CharField(max_length=120, blank = True)
 
 class FormalWomen(models.Model):
@@ -15,4 +16,6 @@ class FormalWomen(models.Model):
 	photo = models.ImageField(default = "default.jpg", blank=True)
 	brand = models.CharField(max_length=120, blank = True)
 	shop = models.CharField(max_length=120, blank = True)
+	price = models.IntegerField(blank=True, default=0)
 	url = models.CharField(max_length=120, blank = True)
+

@@ -62,23 +62,47 @@
 
 <body>
 
-<h2 align = "center"> Marks & Spencer </h2>
+<h2 align = "center">Marks & Spencer</h2>
 <p align = "center">Browse through M&S Products</p>
 
+<p> <b>Men</b> </p>
 
-
-{% for instance in object_list %}
+{% for instance in object_listmen %}
 
 <div class="row">
   <div class="column">
     <div class="card">
       <h3> {{ instance.title }} </h3>
-      <p>
-        <a href="{{ instance.link }}"> <b> View Product </b> </a> <br /> <!-- use instance.link to place correct url -->
-      </p>
+      
       <img src="{{ instance.photo.url }}">
       <p>
-        Price: {{ instance.price }} BDT
+        <a href="{{ instance.url }}"> <b> View Product </b> </a> <br /> <!-- use instance.link to place correct url -->
+        Price: {{ instance.price }}
+      </p> <!-- use instance.photo.url to place correct photo -->
+    </div>
+  </div>
+  
+
+{% endfor %}
+
+</body>
+
+<br>
+
+<body>
+
+<p> <b>Women</b> </p>
+
+{% for instance in object_listwomen %}
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3> {{ instance.title }} </h3>
+      <img src="{{ instance.photo.url }}">
+            <p>
+        <a href="{{ instance.url }}"> <b> View Product </b> </a> <br /> <!-- use instance.link to place correct url -->
+        Price: {{ instance.price }}
       </p> <!-- use instance.photo.url to place correct photo -->
     </div>
   </div>
