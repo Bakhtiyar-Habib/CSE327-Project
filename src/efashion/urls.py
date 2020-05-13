@@ -35,6 +35,8 @@ from casual.views import casual_list_view
 from traditional.views import traditional_list_view
 from footwear.views import footwear_list_view
 
+from accounts.views import signup_view
+
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -64,6 +66,7 @@ urlpatterns = [
     path('products/brands/marksandspencer', marksandspencer_detail_view),
     path('products/brands/fitelegance', fitelegance_detail_view),
 
+    path('signup/', signup_view),
     path('admin/', admin.site.urls),
 ]
 

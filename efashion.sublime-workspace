@@ -124,6 +124,15 @@
 	"buffers":
 	[
 		{
+			"file": "src/efashion/settings.py",
+			"settings":
+			{
+				"buffer_size": 3436,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "src/efashion/urls.py",
 			"settings":
 			{
@@ -138,23 +147,6 @@
 			{
 				"buffer_size": 1794,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/brands/templates/brands/fitelegance_list.html",
-			"settings":
-			{
-				"buffer_size": 2125,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/denim/templates/denim/denim_list.html",
-			"settings":
-			{
-				"buffer_size": 2633,
 				"line_ending": "Windows"
 			}
 		},
@@ -242,6 +234,8 @@
 	],
 	"file_history":
 	[
+		"/C/Users/ASUS/Dev/efashion/src/denim/templates/denim/denim_list.html",
+		"/C/Users/ASUS/Dev/efashion/src/brands/templates/brands/fitelegance_list.html",
 		"/C/Users/ASUS/Dev/efashion/src/brands/models.py",
 		"/C/Users/ASUS/Dev/efashion/src/brands/templates/brands/everlane_list.html",
 		"/C/Users/ASUS/Dev/efashion/src/casual/models.py",
@@ -261,7 +255,6 @@
 		"/C/Users/ASUS/Dev/efashion/src/footwear/views.py",
 		"/C/Users/ASUS/Dev/efashion/src/footwear/templates/footwear/footwear_list.html",
 		"/C/Users/ASUS/Dev/efashion/src/casual/views.py",
-		"/C/Users/ASUS/Dev/efashion/src/denim/templates/denim/denim_list.html",
 		"/C/Users/ASUS/Dev/efashion/src/denim/views.py",
 		"/C/Users/ASUS/Dev/efashion/src/casual/templates/casual/casual_list.html",
 		"/C/Users/ASUS/Dev/efashion/src/categories/templates/categories/categories_list.html",
@@ -397,11 +390,41 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "src/efashion/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3436,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1244,
+								1244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 608.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
 					"file": "src/efashion/urls.py",
 					"semi_transient": false,
 					"settings":
@@ -431,7 +454,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "src/brands/views.py",
 					"semi_transient": false,
 					"settings":
@@ -459,67 +482,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/brands/templates/brands/fitelegance_list.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2125,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1099,
-								1099
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1335.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "src/denim/templates/denim/denim_list.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2633,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2131,
-								2131
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1819.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "src/brands/templates/brands/levis_list.html",
 					"semi_transient": false,
 					"settings":
@@ -549,7 +512,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "src/brands/templates/brands/marksandspencer_list.html",
 					"semi_transient": false,
 					"settings":

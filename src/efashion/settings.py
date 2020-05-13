@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'casual',
     'traditional',
     'footwear',
+
+    'accounts',
 ]
 
 MIDDLEWARE = [
