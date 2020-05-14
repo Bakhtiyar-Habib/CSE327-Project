@@ -3,15 +3,20 @@
 {% block content %}
 
 <h1 align="center"> Sign Up </h1>
-<h2 align="center"> Welcome </h2>
 
-<form class="site-form" action="index.html" method="post">
+
+<form align="center" class="site-form" action="/signup/" method="post">
+  {% csrf_token %}
   {{ form }}
 
   <input type="submit" value="Signup">
   
 </form>
 
+
+<p align="center">
+  Already have an account? <a href="http://127.0.0.1:8000/login/"> Click to Log-in </a>
+</p>
 
 
 {% endblock %}

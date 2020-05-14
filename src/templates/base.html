@@ -7,6 +7,16 @@
 </head>
 
 <header>
+  <nav>
+    <ul>
+      <li>
+        <form class="" action="/logout/" method="post">
+          {% csrf_token %} <!-- needed whenever we have POST request -->
+          <button type="submit"> Log out </button>
+        </form>
+      </li>
+    </ul>
+  </nav>
 
 </header>
 
