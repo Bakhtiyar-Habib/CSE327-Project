@@ -29,7 +29,7 @@ def levis_detail_view(request):
 
 
 def everlane_detail_view(request):
-	query_set1 = DenimMen.objects.filter(brand='everlane')
+	query_set1 = DenimMen.objects.filter(brand__iexact='everlane')
 	query_set2 = DenimWomen.objects.filter(brand='everlane')
 	context = {
 		'object_listmen': query_set1,

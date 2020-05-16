@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"fo",
+				"form\tTag"
+			],
+			[
+				"log",
+				"logout"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"is",
+				"is_valid"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
 				"in",
 				"input\tTag"
 			],
@@ -22,10 +42,6 @@
 			[
 				"def",
 				"default"
-			],
-			[
-				"re",
-				"request"
 			],
 			[
 				"Br",
@@ -124,10 +140,10 @@
 	"buffers":
 	[
 		{
-			"file": "src/efashion/settings.py",
+			"file": "src/efashion/urls.py",
 			"settings":
 			{
-				"buffer_size": 3436,
+				"buffer_size": 2850,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -136,7 +152,16 @@
 			"file": "src/accounts/views.py",
 			"settings":
 			{
-				"buffer_size": 236,
+				"buffer_size": 1200,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/brands/views.py",
+			"settings":
+			{
+				"buffer_size": 1802,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -145,24 +170,16 @@
 			"file": "src/accounts/templates/accounts/signup.html",
 			"settings":
 			{
-				"buffer_size": 260,
+				"buffer_size": 390,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/categories/templates/categories/categories_list.html",
+			"file": "src/accounts/templates/accounts/login.html",
 			"settings":
 			{
-				"buffer_size": 1581,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/efashion/urls.py",
-			"settings":
-			{
-				"buffer_size": 2758,
+				"buffer_size": 258,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -205,6 +222,9 @@
 		"/C/Users/ASUS/Dev/efashion/src/accounts",
 		"/C/Users/ASUS/Dev/efashion/src/accounts/templates",
 		"/C/Users/ASUS/Dev/efashion/src/accounts/templates/accounts",
+		"/C/Users/ASUS/Dev/efashion/src/brands",
+		"/C/Users/ASUS/Dev/efashion/src/brands/templates",
+		"/C/Users/ASUS/Dev/efashion/src/brands/templates/brands",
 		"/C/Users/ASUS/Dev/efashion/src/categories",
 		"/C/Users/ASUS/Dev/efashion/src/categories/templates",
 		"/C/Users/ASUS/Dev/efashion/src/categories/templates/categories",
@@ -212,6 +232,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/ASUS/Dev/efashion/src/efashion/settings.py",
 		"/C/Users/ASUS/Dev/efashion/src/templates/base.html",
 		"/C/Users/ASUS/Dev/efashion/src/accounts/urls.py",
 		"/C/Users/ASUS/Dev/efashion/src/brands/views.py",
@@ -242,7 +263,6 @@
 		"/C/Users/ASUS/Dev/efashion/src/brands/tests.py",
 		"/C/Users/ASUS/Dev/efashion/src/formal/admin.py",
 		"/C/Users/ASUS/Dev/efashion/src/footwear/admin.py",
-		"/C/Users/ASUS/Dev/efashion/src/efashion/settings.py",
 		"/C/Users/ASUS/Dev/efashion/src/traditional/admin.py",
 		"/C/Users/ASUS/Dev/efashion/src/casual/admin.py",
 		"/C/Users/ASUS/Dev/efashion/src/casual/template/casual/casual_list.html",
@@ -375,19 +395,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/efashion/settings.py",
+					"file": "src/efashion/urls.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3436,
+						"buffer_size": 2850,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1244,
-								1244
+								2684,
+								2684
 							]
 						],
 						"settings":
@@ -397,7 +417,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 608.0,
+						"translation.y": 755.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -409,15 +429,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 236,
+						"buffer_size": 1200,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								35,
-								35
+								1200,
+								1200
 							]
 						],
 						"settings":
@@ -425,37 +445,36 @@
 							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 160.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "src/accounts/templates/accounts/signup.html",
+					"file": "src/brands/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 260,
+						"buffer_size": 1802,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								260,
-								260
+								952,
+								952
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 394.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -463,19 +482,19 @@
 				},
 				{
 					"buffer": 3,
-					"file": "src/categories/templates/categories/categories_list.html",
-					"semi_transient": true,
+					"file": "src/accounts/templates/accounts/signup.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1581,
+						"buffer_size": 390,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								267,
+								267
 							]
 						],
 						"settings":
@@ -485,40 +504,38 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1048.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "src/efashion/urls.py",
+					"file": "src/accounts/templates/accounts/login.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2758,
+						"buffer_size": 258,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2593,
-								2593
+								130,
+								137
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 728.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
