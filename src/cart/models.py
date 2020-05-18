@@ -8,6 +8,28 @@ from categories.models import Product
 # Get the user model
 User = get_user_model()
 
+class OrderItem(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
+    ordered = models.BooleanField(default=False)
+    item = models.ForeignKey(Product, on_delete=models.CASCADE)
+    quantity = models.IntegerField(default=1)
+
+    def __str__(self):
+        return f"{self.quantity} of {self.item.title}"
+
+
+# Order Model
+class Order(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    items  = models.ManyToManyField(OrderItem)
+    ordered = models.BooleanField(default=False)
+    start_date = models.DateTimeField(auto_now_add=True)
+    ordered_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.user.username
+
+
 class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     item = models.ForeignKey(Product, on_delete=models.CASCADE)
@@ -17,12 +39,3 @@ class Cart(models.Model):
     def __str__(self):
         return f'{self.quantity} of {self.item.title}'
 
-# Order Model
-class Order(models.Model):
-    orderitems  = models.ManyToManyField(Cart)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    ordered = models.BooleanField(default=False)
-    created = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.user.username

@@ -9,7 +9,7 @@
 	<style>
 		.card {
 		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-		  max-width: 300px;
+		  max-width: 4 00px;
 		  margin: auto;
 		  text-align: center;
 		  font-family: arial;
@@ -48,7 +48,9 @@
 	  <h1>{{ object.title }}</h1>
 	  <p class="price">{{ object.price }}</p>
 	  <p>Some text </p>
-	  <p><button>Add to Cart</button></p>
+	  <p><a href="{{object.get_add_to_cart_url}}"> Add to Cart </a> <br />
+	  	<a href="{{object.get_remove_from_cart_url}}"> Remove from Cart </a>
+	  </p>
 	</div>
 
 </body>

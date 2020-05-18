@@ -17,6 +17,7 @@ class  Product(models.Model):
     category = models.ForeignKey(Categories, on_delete=models.CASCADE)
     photo = models.ImageField(upload_to='products/', blank=True)
     price = models.FloatField()
+    quantity = models.IntegerField(default=1)
     
 
     def __str__(self):
@@ -24,5 +25,11 @@ class  Product(models.Model):
 
     def get_absolute_url(self):
     	return reverse("product-detail", kwargs={"slug":self.slug})
+
+    def get_add_to_cart_url(self):
+    	return reverse("add-to-cart", kwargs={"slug":self.slug})
+
+    def get_remove_from_cart_url(self):
+    	return reverse("remove-from-cart", kwargs={"slug":self.slug})    
 
 

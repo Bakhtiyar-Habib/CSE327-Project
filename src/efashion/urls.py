@@ -36,7 +36,7 @@ from traditional.views import traditional_list_view
 from footwear.views import footwear_list_view
 
 from accounts.views import signup_view, login_view, logout_view
-from cart.views import add_to_cart
+from cart.views import add_to_cart, remove_from_cart
 
 
 #for test
@@ -75,7 +75,9 @@ urlpatterns = [
     path('login/', login_view),
     path('logout/', logout_view),
 
-    path('cart/<slug>', add_to_cart, name='cart'),
+    #CART
+    path('addtocart/<slug>', add_to_cart, name='add-to-cart'),
+    path('removefromcart/<slug>', remove_from_cart, name='remove-from-cart'),
 
     path('admin/', admin.site.urls),
 
