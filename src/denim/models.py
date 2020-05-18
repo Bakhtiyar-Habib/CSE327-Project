@@ -9,6 +9,7 @@ class DenimMen(models.Model):
 	shop = models.CharField(max_length=120, blank = True)
 	price = models.IntegerField(blank=True, default=0)
 	url = models.CharField(max_length=120, blank = True)
+	slug = models.SlugField(default=1)
 
 class DenimWomen(models.Model):
 	title = models.CharField(max_length=120)
@@ -18,3 +19,4 @@ class DenimWomen(models.Model):
 	shop = models.CharField(max_length=120, blank = True)
 	price = models.IntegerField(blank=True, default=0)
 	url = models.CharField(max_length=120, blank = True)
+	slug = models.SlugField(default=1)

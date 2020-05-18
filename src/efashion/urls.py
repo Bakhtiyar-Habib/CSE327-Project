@@ -36,6 +36,11 @@ from traditional.views import traditional_list_view
 from footwear.views import footwear_list_view
 
 from accounts.views import signup_view, login_view, logout_view
+from cart.views import add_to_cart
+
+
+#for test
+from categories.views import product_detail_view
 
 from django.conf.urls.static import static
 from django.conf import settings
@@ -70,7 +75,15 @@ urlpatterns = [
     path('login/', login_view),
     path('logout/', logout_view),
 
+    path('cart/<slug>', add_to_cart, name='cart'),
+
     path('admin/', admin.site.urls),
+
+
+
+
+    #for test
+    path('products/<str:slug>/', product_detail_view, name="product-detail"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

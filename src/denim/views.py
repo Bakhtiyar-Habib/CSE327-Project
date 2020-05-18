@@ -1,11 +1,12 @@
 from django.shortcuts import render
 from .models import DenimMen, DenimWomen
 from brands.models import Brands
+from categories.models import Product
 # Create your views here.
 
 def denim_list_view(request):
-	query_set = DenimMen.objects.all()
-	query_set2 = DenimWomen.objects.all()
+	query_set = Product.objects.filter(category=2, gender='m')
+	query_set2 = Product.objects.filter(category=2, gender='f')
 	query_set3 = Brands.objects.filter(categoryname='denim')
 	context = {
     	'object_listmen': query_set,

@@ -1,10 +1,28 @@
 from django.db import models
-
+from django.urls import reverse
 # Create your models here.
 
 class Categories(models.Model):
 	title = models.CharField(max_length=120)
 	description = models.TextField(blank=True, null=True)
 	photo = models.ImageField(default = "default.jpg", blank=True)
-	subcategories = models.CharField(max_length=120, blank = True)
 	link = models.CharField(max_length=200, blank = True)
+
+	
+#Product Model
+class  Product(models.Model):
+    title = models.CharField(max_length=300)
+    gender = models.CharField(max_length=1)
+    slug = models.SlugField(max_length=200)
+    category = models.ForeignKey(Categories, on_delete=models.CASCADE)
+    photo = models.ImageField(upload_to='products/', blank=True)
+    price = models.FloatField()
+    
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+    	return reverse("product-detail", kwargs={"slug":self.slug})
+
+

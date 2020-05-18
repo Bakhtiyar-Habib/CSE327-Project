@@ -74,7 +74,7 @@
     <div class="card">
       <h3> {{ instance.title }} </h3>
       <p> Brand: {{ instance.brand }} <br />
-        <a href="http://127.0.0.1:8000/products/categories/formal"> <b> View & Buy Product </b> </a> <!-- use instance.url to place correct url -->
+        <a href="{{instance.get_absolute_url}}"> <b> View & Buy Product </b> </a> <!-- use instance.url to place correct url -->
       </p>
       <img src="{{ instance.photo.url }}"> <!-- use instance.photo.url to place correct photo -->
     </div>
@@ -98,7 +98,7 @@
     <div class="card">
       <h3> {{ instance.title }} </h3>
       <p> Brand: {{ instance.brand }} <br />
-        <a href="http://127.0.0.1:8000/products/categories/formal"> <b> View & Buy Product </b> </a> <!-- use instance.url to place correct url -->
+        <a href="{{instance.get_absolute_url}}"> <b> View & Buy Product </b> </a> <!-- use instance.url to place correct url -->
       </p>
       <img src="{{ instance.photo.url }}"> <!-- use instance.photo.url to place correct photo -->
     </div>
