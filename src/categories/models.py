@@ -17,7 +17,7 @@ class  Product(models.Model):
     category = models.ForeignKey(Categories, on_delete=models.CASCADE)
     brand = models.CharField(max_length=300)
     photo = models.ImageField(upload_to='products/', blank=True)
-    price = models.FloatField()
+    price = models.IntegerField(default=0)
     quantity = models.IntegerField(default=1)
     
 

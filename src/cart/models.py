@@ -38,8 +38,8 @@ class Order(models.Model):
     def get_total(self):
         total = 0
         for order_item in self.items.all():
-            total += order_item.get_final_price()
-            return total
+            total += order_item.get_total_item_price()
+            return total  
 
 
 class Cart(models.Model):
