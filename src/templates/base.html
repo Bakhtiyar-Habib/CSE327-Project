@@ -7,14 +7,21 @@
 </head>
 
 <header>
-  <nav>
+  <nav align="right">
     <ul>
-      <li>
         <form class="" action="/logout/" method="post">
           {% csrf_token %} <!-- needed whenever we have POST request -->
           <button type="submit"> Log out </button>
         </form>
-      </li>
+    </ul>
+  </nav>
+
+  <header>
+  <nav align="right">
+    <ul>
+        <form action="http://127.0.0.1:8000/order-summary">
+          <button type="submit"> View Cart </button>
+        </form>
     </ul>
   </nav>
 
@@ -43,7 +50,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #B5E6F0;
   {% load static %}
-  background-image: url({% static "" %});
+  background-image: url({% static "e-commerce.png" %});
   background-repeat: no-repeat;
   background-size: cover;
 }

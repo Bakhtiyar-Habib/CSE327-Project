@@ -36,7 +36,7 @@ from traditional.views import traditional_list_view
 from footwear.views import footwear_list_view
 
 from accounts.views import signup_view, login_view, logout_view
-from cart.views import add_to_cart, remove_from_cart
+from cart.views import add_to_cart, remove_from_cart, OrderSummaryView
 
 
 #for test
@@ -78,6 +78,7 @@ urlpatterns = [
     #CART
     path('addtocart/<slug>', add_to_cart, name='add-to-cart'),
     path('removefromcart/<slug>', remove_from_cart, name='remove-from-cart'),
+    path('order-summary', OrderSummaryView.as_view(), name='order-summary'),
 
     path('admin/', admin.site.urls),
 

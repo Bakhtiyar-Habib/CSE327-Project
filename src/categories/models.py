@@ -15,6 +15,7 @@ class  Product(models.Model):
     gender = models.CharField(max_length=1)
     slug = models.SlugField(max_length=200)
     category = models.ForeignKey(Categories, on_delete=models.CASCADE)
+    brand = models.CharField(max_length=300)
     photo = models.ImageField(upload_to='products/', blank=True)
     price = models.FloatField()
     quantity = models.IntegerField(default=1)

@@ -25,7 +25,10 @@
   }
 
 /* Remove extra left and right margins, due to padding */
-  .row {margin: 10px 10px;}
+  .row {margin: 10px 10px;
+        
+
+  }
 
 /* Clear floats after the columns */
   .row:after {
@@ -51,6 +54,12 @@
       background-color: #f1f1f1;
   }
 
+  section {
+      float: left;
+      margin: 0 1.5%;
+      width: 100%;
+  }
+
   img {
     width: 150px;
     height: 200px;
@@ -65,7 +74,9 @@
 <h2 align = "center">Formal-Wear</h2>
 <p align = "center">Browse through our Formal-Wear products</p>
 
-<p> <b>Men</b> </p>
+<p align="center"> <b>Men</b> </p>
+
+<section>
 
 {% for instance in object_listmen %}
 
@@ -83,14 +94,18 @@
 
 {% endfor %}
 
+</section>
+
+
 </body>
 
 <br>
 
 <body>
 
-<p> <b>Women</b> </p>
+<p align="center"> <b>Women</b> </p>
 
+<section>
 {% for instance in object_listwomen %}
 
 <div class="row">
@@ -107,13 +122,16 @@
 
 {% endfor %}
 
+</section>
 
 </body>
 
 <body>
 
 
-<h4> Brands </h4>
+<section>
+
+<h4 align="center"> Brands </h4>
   {% for instance in list_brands %}
 
 <div class="row">
@@ -129,6 +147,8 @@
   
 
 {% endfor %}
+</section>
+
 </body>
 
 {% endblock %}

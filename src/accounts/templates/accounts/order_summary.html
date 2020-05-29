@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+
+<h2 align="center"> Order Summary </h2>
+
+<body align="center">
+    {% for order_item in object.items.all %}
+        <br />
+        <th scope="row">{{ forloop.counter }}</th>
+            <td>{{ order_item.item.title }}</td>
+            <td>{{ order_item.item.price }}</td>
+
+        {% empty %}
+        <tr>
+            <td colspan='5'>Your cart is empty</td>
+        </tr>
+        
+
+    {% endfor %}
+
+    {% if object.get_total %}
+        <br />
+        <tr>
+            <td colspan="4"><b>Order Total</b></td>
+            <td><b>BDT {{ object.get_total }}</b></td>
+        </tr>
+        <br />
+        <tr>
+            <td colspan="5">
+            <a class=>Proceed to checkout</a>
+            <a class=>Continue shopping</a>
+            </td>
+        </tr>
+        {% endif %}
+
+
+</body>
+
+
+
+{% endblock %}

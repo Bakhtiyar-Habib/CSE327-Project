@@ -9,7 +9,7 @@
 	<style>
 		.card {
 		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-		  max-width: 4 00px;
+		  max-width: 400px;
 		  margin: auto;
 		  text-align: center;
 		  font-family: arial;
@@ -24,13 +24,40 @@
 		  border: none;
 		  outline: 0;
 		  padding: 12px;
-		  color: white;
-		  background-color: #000;
+		  color: black;
+		  background-color: #C0C0C0;
 		  text-align: center;
 		  cursor: pointer;
 		  width: 100%;
 		  font-size: 18px;
 		}
+
+		.group:before,
+		.group:after {
+		  content: "";
+		  display: table;
+		}
+		.group:after {
+		  clear: both;
+		}
+		.group {
+		  clear: both;
+		  *zoom: 1;
+		}
+
+		section {
+		  float: left;
+		  margin: 0 1.5%;
+		  width: 50%;
+		  clear: both;
+		}
+
+		aside {
+		  float: right;
+		  margin: 0 1.5%;
+		  width: 30%;
+		}
+
 
 		.card button:hover {
 		  opacity: 0.7;
@@ -41,16 +68,32 @@
 
 <body>
 
-	<h2 style="text-align:center">Product</h2>
 
-	<div class="card">
-	  <img src="{{ object.photo.url }}" style="width:100%">
-	  <h1>{{ object.title }}</h1>
-	  <p class="price">{{ object.price }}</p>
-	  <p>Some text </p>
-	  <p><a href="{{object.get_add_to_cart_url}}"> Add to Cart </a> <br />
-	  	<a href="{{object.get_remove_from_cart_url}}"> Remove from Cart </a>
-	  </p>
+	<div class="group">
+
+		<section>
+
+
+			<h2 style="text-align:center">Product</h2>
+
+			<div class="card">
+			  <img src="{{ object.photo.url }}" style="width:60%">
+			  <h1>{{ object.title }}</h1>
+			  <p class="price">{{ object.price }}</p>
+			  <p>Some text </p>
+			  <p><button> <a href="{{object.get_add_to_cart_url}}"> Add to Cart </a> </button><br />
+			  	<button><a href="{{object.get_remove_from_cart_url}}"> Remove from Cart </a></button>
+			  </p>
+			</div>
+
+		</section>
+
+		<aside>
+			<h3>Available Shops</h3>
+
+
+		</aside>
+
 	</div>
 
 </body>

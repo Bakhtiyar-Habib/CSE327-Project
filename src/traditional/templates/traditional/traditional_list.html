@@ -25,7 +25,10 @@
   }
 
 /* Remove extra left and right margins, due to padding */
-  .row {margin: 10px 10px;}
+  .row {margin: 10px 10px;
+        
+
+  }
 
 /* Clear floats after the columns */
   .row:after {
@@ -51,6 +54,12 @@
       background-color: #f1f1f1;
   }
 
+  section {
+      float: left;
+      margin: 0 1.5%;
+      width: 100%;
+  }
+
   img {
     width: 150px;
     height: 200px;
@@ -65,7 +74,9 @@
 <h2 align = "center">Traditional-Wear</h2>
 <p align = "center">Browse through our Traditional-Wear products</p>
 
-<p> <b>Men</b> </p>
+<p align="center"> <b>Men</b> </p>
+
+<section>
 
 {% for instance in object_listmen %}
 
@@ -74,7 +85,7 @@
     <div class="card">
       <h3> {{ instance.title }} </h3>
       <p> Brand: {{ instance.brand }} <br />
-        <a href="http://127.0.0.1:8000/products/categories/formal"> <b> View & Buy Product </b> </a> <!-- use instance.url to place correct url -->
+        <a href="{{instance.get_absolute_url}}"> <b> View & Buy Product </b> </a> <!-- use instance.url to place correct url -->
       </p>
       <img src="{{ instance.photo.url }}"> <!-- use instance.photo.url to place correct photo -->
     </div>
@@ -82,6 +93,9 @@
   
 
 {% endfor %}
+
+</section>
+
 
 </body>
 
@@ -89,8 +103,9 @@
 
 <body>
 
-<p> <b>Women</b> </p>
+<p align="center"> <b>Women</b> </p>
 
+<section>
 {% for instance in object_listwomen %}
 
 <div class="row">
@@ -98,7 +113,7 @@
     <div class="card">
       <h3> {{ instance.title }} </h3>
       <p> Brand: {{ instance.brand }} <br />
-        <a href="http://127.0.0.1:8000/products/categories/formal"> <b> View & Buy Product </b> </a> <!-- use instance.url to place correct url -->
+        <a href="{{instance.get_absolute_url}}"> <b> View & Buy Product </b> </a> <!-- use instance.url to place correct url -->
       </p>
       <img src="{{ instance.photo.url }}"> <!-- use instance.photo.url to place correct photo -->
     </div>
@@ -107,13 +122,16 @@
 
 {% endfor %}
 
-</body>
+</section>
 
+</body>
 
 <body>
 
 
-<h4> Brands </h4>
+<section>
+
+<h4 align="center"> Brands </h4>
   {% for instance in list_brands %}
 
 <div class="row">
@@ -129,7 +147,8 @@
   
 
 {% endfor %}
+</section>
+
 </body>
 
 {% endblock %}
-

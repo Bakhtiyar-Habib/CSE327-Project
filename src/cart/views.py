@@ -1,10 +1,11 @@
 from django.contrib import messages
-from django.shortcuts import render, get_object_or_404
-from django.shortcuts import redirect
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth import get_user_model
 from cart.models import Cart, Order, OrderItem
 from categories.models import Product 
 from django.utils import timezone
+from django.views.generic import ListView, DetailView, View
+from django.core.exceptions import ObjectDoesNotExist
 # Create your views here.
 # Add to Cart View
 
@@ -63,3 +64,18 @@ def remove_from_cart(request, slug):
         return redirect("product-detail", slug=slug)
 
 #now add messages to template to see them in browser
+
+
+class OrderSummaryView(View): #first class based view
+    def get(self, *args, **kwargs):
+        try:
+            order = Order.objects.get(user=self.request.user, ordered=False)
+            context = {
+                'object': order
+            }
+            return render(self.request, "accounts/order_summary.html", context)
+        except ObjectDoesNotExist:
+            return redirect("home")
+
+
+        return render(self.request, "accounts/order_summary.html", context)
