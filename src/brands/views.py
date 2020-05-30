@@ -50,8 +50,8 @@ def marksandspencer_detail_view(request):
 	return render(request, "brands/marksandspencer_list.html", context)
 
 def fitelegance_detail_view(request):
-	query_set1 = Product.objects.filter(brand__iexact='fitelegance', gender='m')
-	query_set2 = Product.objects.filter(brand__iexact='fitelegance', gender='f')
+	query_set1 = Product.objects.filter(brand__iexact='fit elegance', gender='m')
+	query_set2 = Product.objects.filter(brand__iexact='fit elegance', gender='f')
 	context = {
 		'object_listmen': query_set1,
 		'object_listwomen': query_set2

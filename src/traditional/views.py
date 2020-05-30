@@ -1,11 +1,12 @@
 from django.shortcuts import render
 from .models import TraditionalMen, TraditionalWomen
 from brands.models import Brands
+from categories.models import Product
 # Create your views here.
 
 def traditional_list_view(request):
-	query_set = TraditionalMen.objects.all()
-	query_set2 = TraditionalWomen.objects.all()
+	query_set = Product.objects.filter(category=4, gender='m')
+	query_set2 = Product.objects.filter(category=4, gender='f')
 	query_set3 = Brands.objects.filter(categoryname='traditional')
 	context = {
     	'object_listmen': query_set,
