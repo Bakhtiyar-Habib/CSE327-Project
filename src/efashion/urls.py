@@ -25,7 +25,7 @@ from pages.views import allshops_view
 from pages.views import contact_view
 from categories.views import category_detail_view, category_list_view
 
-from brands.views import brand_list_view, levis_detail_view, everlane_detail_view, marksandspencer_detail_view, fitelegance_detail_view
+from brands.views import brand_list_view, levis_detail_view, everlane_detail_view, marksandspencer_detail_view, fitelegance_detail_view, diesel_detail_view, ralphlauren_detail_view, aarong_detail_view, dorjibari_detail_view, bata_detail_view, adidas_detail_view
 
 from shops.views import shop_list_view
 
@@ -70,6 +70,12 @@ urlpatterns = [
     path('products/brands/everlane', everlane_detail_view),
     path('products/brands/marksandspencer', marksandspencer_detail_view),
     path('products/brands/fitelegance', fitelegance_detail_view),
+    path('products/brands/diesel', diesel_detail_view),
+    path('products/brands/ralphlauren', ralphlauren_detail_view),
+    path('products/brands/aarong', aarong_detail_view),
+    path('products/brands/dorjibari', dorjibari_detail_view),
+    path('products/brands/bata', bata_detail_view),
+    path('products/brands/adidas', adidas_detail_view),   
 
     path('signup/', signup_view),
     path('login/', login_view),

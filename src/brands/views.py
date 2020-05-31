@@ -59,3 +59,62 @@ def fitelegance_detail_view(request):
 
 	return render(request, "brands/fitelegance_list.html", context)
 
+def diesel_detail_view(request):
+	query_set1 = Product.objects.filter(brand__iexact='diesel', gender='m')
+	query_set2 = Product.objects.filter(brand__iexact='diesel', gender='f')
+	context = {
+		'object_listmen': query_set1,
+		'object_listwomen': query_set2
+	}
+
+	return render(request, "brands/diesel_list.html", context)
+
+def ralphlauren_detail_view(request):
+	query_set1 = Product.objects.filter(brand__iexact='ralph lauren', gender='m')
+	query_set2 = Product.objects.filter(brand__iexact='ralph lauren', gender='f')
+	context = {
+		'object_listmen': query_set1,
+		'object_listwomen': query_set2
+	}
+
+	return render(request, "brands/ralphlauren_list.html", context)
+
+def aarong_detail_view(request):
+	query_set1 = Product.objects.filter(brand__iexact='aarong', gender='m')
+	query_set2 = Product.objects.filter(brand__iexact='aarong', gender='f')
+	context = {
+		'object_listmen': query_set1,
+		'object_listwomen': query_set2
+	}
+
+	return render(request, "brands/aarong_list.html", context)
+
+def dorjibari_detail_view(request):
+	query_set1 = Product.objects.filter(brand__iexact='dorjibari', gender='m')
+	query_set2 = Product.objects.filter(brand__iexact='dorjibari', gender='f')
+	context = {
+		'object_listmen': query_set1,
+		'object_listwomen': query_set2
+	}
+
+	return render(request, "brands/dorjibari_list.html", context)
+
+def bata_detail_view(request):
+	query_set1 = Product.objects.filter(brand__iexact='bata', gender='m')
+	query_set2 = Product.objects.filter(brand__iexact='bata', gender='f')
+	context = {
+		'object_listmen': query_set1,
+		'object_listwomen': query_set2
+	}
+
+	return render(request, "brands/bata_list.html", context)
+
+def adidas_detail_view(request):
+	query_set1 = Product.objects.filter(brand__iexact='adidas', gender='m')
+	query_set2 = Product.objects.filter(brand__iexact='adidas', gender='f')
+	context = {
+		'object_listmen': query_set1,
+		'object_listwomen': query_set2
+	}
+
+	return render(request, "brands/adidas_list.html", context)	
