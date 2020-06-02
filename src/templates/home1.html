@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>      
+      </li>
+      <li class = "nav-item">
+        <a class = "nav-link" href= "#"><button type="button" class="btn btn-outline-light btn-sm">Store</button></a>
+      </li>
+      
+      <li class = "nav-item">
+        <a class = "nav-link" href= "#"><button type="button" class="btn btn-outline-light btn-sm">About</button></a>
+      </li>
+  </div>
+</nav>
+
+<!--- Image Slider -->
+<div id = "slides" class = "carousel slide" data-ride = "carousel">
+<ul class="carousel-indicators">
+  <li data-target = "#slides" data-slide-to="0" class="active"></li>
+  <li data-target = "#slides" data-slide-to="1"></li>
+  <li data-target = "#slides" data-slide-to="2"></li>
+</ul>
+<div class = "carousel-inner">
+  <div class = "carousel-item active">
+    <img src="{% static 'img/product.jpg' %}">
+    <div class ="carousel-caption">
+      <h1 class = "display-2"> Diamond <br> Valley</h1>
+      <h3>Click To Choose</h3>
+      <a href="https://www.youtube.com/watch?v=NVgYg-8pxeI" target="_blank"><button type = "button" class = "btn btn-outline-light btn-lg">Store</button></a>
+      <a href="https://www.rockstargames.com/reddeadredemption2/order?edition=special" target="_blank"><button type="button" class = "btn btn-primary btn-danger btn-lg">Buy</button></a>
+
+      </div>
+      
+</div>
+  <div class = "carousel-item">
+    <img src="{% static 'img/spring2.gif' %}">
+    <div class="carousel-caption-2nd-pic">
+      <h1 class="display-2nd-pic"> </h1>
+      <h3> </h3>
+    </div>
+  </div>
+  <div class = "carousel-item">
+    <img src="{% static 'img/4th.gif' %}">
+    <div class ="carousel-caption-3rd-pic">
+      <h1 class = "display-3rd-pic"> 50% Off</h1>
+      <h3> On T-Shirts</h3>
+      <a href="https://www.youtube.com/watch?v=NVgYg-8pxeI" target="_blank"><button type = "button" class = "btn btn-outline-light btn-lg">  Shop Now</button></a>
+      
+
+      </div>
+
+  </div>
+</div>
+</div>
+
+<!--- Jumbotron -->
+<div class = "container-fluid">
+<div class = "row Jumbotron">
+  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+    <p class = "Lead"></p>
+  </div>
+  <div class = "col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+    <a href = "https://www.rockstargames.com/reddeadredemption2/order?edition=ultimate" target="_blank"><button type="button" class = "btn btn-outline-secondary btn-lg">Get Vouchers </button></a>
+  </div>
+</div>
+</div>
+
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+  <div class = "row Welcome text-center">
+    <div class="col-12">
+      <h1 class="display-4">Introduction</h1>
+    </div>
+    <hr>
+    <div class="col-12">
+      <p class="Lead">
+        The audacity it needs to do shopping online is no joke.We understand the struggle you go through while shopping online. Here, at diamond valley we give you the wonderful opportunity to shop in the easiest way possible with the best discounts. We are the first online shopping store which does not charge 
+        a single coin for your delivery. It is completely free. Hope you will have a nice experience.
+
+      </p>
+      <img src="{% static 'img/dia.jpg' %}">
+    </div>
+</div>
+</div>
+
+
+
+<!--- Three Column Section -->
+<div class = "container-fluid padding">
+  <div class="row text-center padding">
+  </div>
+  <hr class="my-4">
+</div>
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+    <div class="col-12">
+      <h1 class="display-4">Quick Links</h1>
+    </div>
+    <hr>
+  </div>
+</div>
+
+<div class="container-fluid padding">
+<div class="row padding">
+  <div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src="{% static 'img/male.jpeg' %}" alt="">
+        <div class="overlay">
+           <h2>Tuxedo</h2>
+           <a class="info" href="#">Shop</a>
+        </div>
+    </div>
+  </div>
+<div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src = "{% static 'img/female.jpg' %}">
+      <div class="overlay">
+           <h2>Explore casuals</h2>
+           <a class="info" href="#">Shop</a>
+        </div>
+    </div>
+</div>  
+<div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src = "{% static 'img/party.jpg' %}">
+      <div class="overlay">
+           <h2>Dress for Fun</h2>
+           <a class="info" href="#">Shop</a>
+        </div>
+    </div>
+</div>  
+</div>
+
+<!--- Emoji Section 
+<button class="fun" data-toggle = "collapse" data-target = "#emoji">Shades Of Arthur
+</button>
+<div id="emoji" class="collapse">
+<div class="container-fluid padding">
+<div class="row text-center">
+  <div class="col-sm-6 col-md-3">
+    <img class="gif" src="img/gif/1.gif">
+</div>  
+<div class="col-sm-6 col-md-3">
+    <img class="gif" src="img/gif/2.gif">
+</div>  
+<div class="col-sm-6 col-md-3">
+    <img class="gif" src="img/gif/3.gif">
+</div>  
+<div class="col-sm-6 col-md-3">
+    <img class="gif" src="img/gif/4.gif">
+</div>  
+</div>
+  </div>
+</div> -->
+
+
+  
+<!--- Meet the team -->
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+    <div class="col-12">
+      <h1 class="display-4">What's New</h1>
+    </div>
+    <hr>
+  </div>
+</div>
+<!--- Cards -->
+<div class="container-fluid padding">
+<div class="row padding">
+  <div class="col-md-4">
+    <div class="Card">
+      <img class="card-img-top" src = "{% static 'img/1.png' %}">
+      <div class="card-body">
+        <h4 class="card-title">Shirts</h4>
+        <p class="card-text">A solid colored shirt is very trendy these days. Just arrived from Thailand</p>
+        <a href = "#" class="btn btn-outline-secondary">Check Store</a>
+    </div>
+  </div>
+</div>  
+<div class="col-md-4">
+    <div class="Card">
+      <img class="card-img-top" src = "{% static 'img/2.png' %}">
+      <div class="card-body">
+        <h4 class="card-title">Sweater</h4>
+        <p class="card-text">Stylish sweater for females</p>
+        <a href = "#" class="btn btn-outline-secondary">Check Store</a>
+    </div>
+  </div>
+</div>  
+<div class="col-md-4">
+    <div class="Card">
+      <img class="card-img-top" src = "{% static 'img/4.png' %}">
+      <div class="card-body">
+        <h4 class="card-title">Club Jackets</h4>
+        <p class="card-text">Recently arrived from Indonesia </p>
+        <a href = "#" class="btn btn-outline-secondary">Check Store</a>
+    </div>
+  </div>
+</div>  
+</div>
+
+<!--- Two Column Section 
+<div class = "container-fluid padding">
+  <div class="row padding">
+    <div class = "col-lg-6">
+      <h2>What It Includes</h2>
+      <p>Awesome Gameplay</p>
+      <p>Different Camera Angles To Make Things More Realistic</p>
+      <p>Online</p>
+      <br>
+    </div>
+    <div class="col-lg-6">
+      <img src="img/sadie.jpg" class = "img-fluid">
+    </div>
+  </div>
+  <hr class="my-4">
+</div>
+-->
+
+
+
+</body>
+</html>
+
+
+
+{% endblock %}
+
+
+
+
+
+
+<!-- View in Browser: Drew's #1 Trending YouTube Tutorial -->
+
+<!-- End View in Browser: Drew's #1 Trending YouTube Tutorial -->
+
+
+
+	

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>			
+      </li>
+			<li class = "nav-item">
+				<a class = "nav-link" href= "#"><button type="button" class="btn btn-outline-light btn-sm">Store</button></a>
+			</li>
+			
+			<li class = "nav-item">
+				<a class = "nav-link" href= "#"><button type="button" class="btn btn-outline-light btn-sm">About</button></a>
+			</li>
+	</div>
+</nav>
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src="{% static 'img/denim.jpg' %}" alt="">
+        <div class="overlay">
+           <h2>Denim</h2>
+           <a class="info" href="http://127.0.0.1:8000/products/categories/denim">Shop</a>
+        </div>
+    </div>
+  </div>
+<div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src="{% static 'img/suits.jpg' %}" alt="">
+        <div class="overlay">
+           <h2>Formal</h2>
+           <a class="info" href="http://127.0.0.1:8000/products/categories/formal">Shop</a>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src="{% static 'img/occs.jpg' %}" alt="">
+        <div class="overlay">
+           <h2>Traditional</h2>
+           <a class="info" href="http://127.0.0.1:8000/products/categories/traditional">Shop</a>
+        </div>
+    </div>
+  </div>
+<div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src = "{% static 'img/cas.jpg' %}">
+			<div class="overlay">
+           <h2>Casuals</h2>
+           <a class="info" href="http://127.0.0.1:8000/products/categories/casual">Shop</a>
+        </div>
+    </div>
+</div>	
+<div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src = "{% static 'img/ft.jpg' %}">
+			<div class="overlay">
+           <h2>Footwear</h2>
+           <a class="info" href="http://127.0.0.1:8000/products/categories/footwear">Shop</a>
+        </div>
+    </div>
+</div>	
+</div>
+
+</body>
+
+{% endblock %}

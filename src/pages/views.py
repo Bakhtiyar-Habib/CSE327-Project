@@ -6,7 +6,7 @@ from django.shortcuts import render
 def home_view(request, *args, **kwargs):
 	print(args, kwargs)
 	print(request.user)
-	return render(request, "home.html", {})
+	return render(request, "home1.html", {})
 
 
 def about_view(request, *args, **kwargs):

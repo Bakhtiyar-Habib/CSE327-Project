@@ -18,7 +18,7 @@ def category_list_view(request):
     	'object_list': query_set
     }
     
-	return render(request, "categories/categories_list.html", context)
+	return render(request, "categories/categories_list1.html", context)
 
 
 def product_detail_view(request, slug):

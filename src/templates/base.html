@@ -1,32 +1,21 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title> E-Fashion </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Fashion</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+  
 </head>
 
 <header>
-  <nav align="right">
-    <ul>
-        <form class="" action="/logout/" method="post">
-          {% csrf_token %} <!-- needed whenever we have POST request -->
-          <button type="submit"> Log out </button>
-        </form>
-    </ul>
-  </nav>
-
-  <header>
-  <nav align="right">
-    <ul>
-        <form action="http://127.0.0.1:8000/order-summary">
-          <button type="submit"> View Cart </button>
-        </form>
-    </ul>
-  </nav>
-
-<!-- cart messages -->
-  <div class="mt-5 pt-4">
+    <div class="mt-5 pt-4">
   {% if messages %}
    
     {% for message in messages %}
@@ -37,107 +26,121 @@
 
   {% endif %}
   </div>
-
 </header>
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #B5E6F0;
-  {% load static %}
-  background-image: url({% static "e-commerce.png" %});
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.topnav {
-  margin: 50px 250px 50px 250px;
-  overflow: hidden;
-  background-color: #1B91A4;
-}
-
-.topnav a {
-  float: left;
-  color: #F3FDFF;
-  text-align: center;
-  padding: 10px 42px;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #055768;
-  color: white;
-}
-
-.bottomnav {
-  margin: 20px 350px 20px 680px;
-  overflow: hidden;
-  background-color: #FFFFFF;
-}
-
-.bottomnav a {
-  float: left;
-  color: #696969;
-  text-align: center;
-  padding: 8px 10px;
-  text-decoration: none;
-  font-size: 11px;
-}
-
-
-
-}
-</style>
-</head>
 
 <body>
 
-	<p align="center"> E-Fashion at your service </p>
-
-    <div class="topnav">
-    <a class="active" href="http://127.0.0.1:8000/home">Home</a>
-    <a href="http://127.0.0.1:8000/products">Products</a>
-    <a href="http://127.0.0.1:8000/allshops">All Shops</a>
-    <a href="http://127.0.0.1:8000/about">About Us</a>
-    <a href="http://127.0.0.1:8000/signup">Log-in</a>
-    <a href="#about">Contact</a>
+<!-- Navigation -->
+<nav class  = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class  = "container-fluid">
+    <a class ="navbar-brand" href = "#"><img src = "{% static 'img/newbew.gif' %}"></a>
+    <button class = "navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarResponsive">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class = "collapse navbar-collapse" id="navbarResponsive">
+    <ul class = "navbar-nav ml-auto">
+      <li class = "nav-item active">
+        <a class = "nav-link" href= "#"><button type="button" class="btn btn-outline-light btn-sm">Home</button></a>
+      </li>
+      <li class = "nav-item">
+        <a class = "nav-link" href= "http://127.0.0.1:8000/products/categories/"><button type="button" class="btn btn-outline-light btn-sm">Category</button></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><button type="button" class="btn btn-outline-light btn-sm">Log In</button></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          
+  <form class="px-4 py-3">
+    <div class="form-group">
+      <label for="exampleDropdownFormEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
     </div>
+    <div class="form-group">
+      <label for="exampleDropdownFormPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+      <label class="form-check-label" for="dropdownCheck">
+        Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+  <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">New around here? Sign up</a>
+  <a class="dropdown-item" href="#">Forgot password?</a>
 
-    <hr style="height:3px;border-width:2px;color:gray;background-color:gray">  <!-- line below Nav bar -->
+        </div>
+
+
+
 
 
 	{% block content %} 
      replace me 
 	{% endblock %}
 
+  
+
 <br />
 
-<hr style="height:2px;border-width:1px; margin: 400px 0px 30px 0px;color:gray;background-color:gray"> <!-- bottom line -->
+<!--- Connect -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+  <div class="col-12">
+    <h2>Connect</h2>
+  </div>
+  <div class="col-12 social padding">
+    <a href="#"><i class = "fab fa-facebook"></i></a>
+      <a href="#"><i class = "fab fa-twitter"></i></a>
+        <a href="#"><i class = "fab fa-google-plus-g"></i></a>
+          <a href="#"><i class = "fab fa-instagram"></i></a>
+          <a href="#"><i class = "fab fa-youtube"></i></a>
+  </div>
+</div>  
+</div>
 
-    <div class="bottomnav">  <!-- bottom Nav bar -->
-    <a class="active" href="http://127.0.0.1:8000/home">Home</a>
-    <a href="http://127.0.0.1:8000/about">About Us</a>
-    <a href="http://127.0.0.1:8000/products">Products</a>
-    <a href="http://127.0.0.1:8000/allshops">All Shops</a>
-    <a href="#about">Contact</a>
+<!--- Footer -->
+<footer>
+  <div class="container-fluid padding">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src = "{% static 'img/daa.png' %}">
+      <hr class="light">
+      <p>616161616</p>
+      <p>pasa12@asdas.com</p>
+      <p>100 street nyc</p>
+      <p>City,State 000</p>
     </div>
+    <div class="col-md-4">
+      <hr class="light">
+      <h5>Our Hours</h5>
+      <hr class="light">
+      <p>Monday: 9am-4pm</p>
+      <p>Saturday: All day</p>
+      <p>Sunday: Closed</p>
+    </div>
+    <div class="col-md-4">
+      <hr class="light">
+      <h5>Ashir Intishar</h5>
+      <hr class="light">
+      <p>120938929</p>
+      <p>askdasidn@aksnaso.com</p>
+      <p>Sunday: Closed</p>
+    </div>
+    <div class="col-12">
+      <hr class="light-100">
+      <h5>&copy; Rockstargames.com</h5>
+    </div>
+  </div>
+  </div>
+</footer>
 
-  <footer style="margin: 10px 10px 10px 10px;text-align: center"> Contact Us at: </footer>
-   
+
 
 </body>
-
-
-
 </html>
+
+
