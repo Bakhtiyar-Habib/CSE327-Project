@@ -5,150 +5,117 @@
 {% load static %}
 
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-  * {
-      box-sizing: border-box;
-  }
-
-  body {
-      font-family: Arial, Helvetica, sans-serif;
-  }
-
-/* Float four columns side by side */
-  .column {
-      float: left;
-      width: 20%;
-      padding: 5px 5px;
-  }
-
-/* Remove extra left and right margins, due to padding */
-  .row {margin: 10px 10px;
-        
-
-  }
-
-/* Clear floats after the columns */
-  .row:after {
-      content: "";
-      display: table;
-      clear: both;
-  }
-
-/* Responsive columns */
-  @media screen and (max-width: 600px) {
-      .column {
-      width: 90%;
-      display: block;
-      margin-bottom: 30px;
-      }
-  }
-
-/* Style the counter cards */
-  .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      padding: 10px;
-      text-align: center;
-      background-color: #f1f1f1;
-  }
-
-  section {
-      float: left;
-      margin: 0 1.5%;
-      width: 100%;
-  }
-
-  img {
-    width: 150px;
-    height: 200px;
-    object-fit: cover;
-  }
-</style>
-</head>
-
-
 <body>
 
-<h2 align = "center">Footwear</h2>
-<p align = "center">Browse through our Footwear products</p>
 
-<p align="center"> <b>Men</b> </p>
 
-<section>
+<div class="container-fluid padding">
+  <h2 align="center">Footwear</h2>  
+<div class="row padding">
 
+<div class="hover10 column">
+  <div>
+    <h2>Male</h2>
+    <img src="{% static 'img/m2.jpg' %}"/>
+
+    
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="container-fluid padding">
+<div class="row padding">
 {% for instance in object_listmen %}
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <h3> {{ instance.title }} </h3>
-      <p> Brand: {{ instance.brand }} <br />
-        <a href="{{instance.get_absolute_url}}"> <b> View & Buy Product </b> </a> <!-- use instance.url to place correct url -->
-      </p>
-      <img src="{{ instance.photo.url }}"> <!-- use instance.photo.url to place correct photo -->
+  <div class="col-md-2">
+    <div class="Card">
+      <img class="card-img-top" src = "{{ instance.photo.url }}" width="175" height="225">
+      <div class="card-body">
+        <h6 class="card-title">{{ instance.title }}</h6>
+        <p class="card-text">Brand: {{ instance.brand }} <br /> BDT {{ instance.price }}</p>
+        <a href = "{{instance.get_absolute_url}}" class="btn btn-outline-secondary">View Product</a>
+      </div>
     </div>
-  </div>
-  
-
+  </div>  
 {% endfor %}
+</div>
+</div>
 
-</section>
 
 
-</body>
 
-<br>
 
-<body>
 
-<p align="center"> <b>Women</b> </p>
+<div class="container-fluid padding">
+<div class="row padding">
 
-<section>
+
+<div class="hover10 column">
+  <div>
+    <h2>Female</h2>
+    <img src="{% static 'img/wm2.jpg' %}"/>
+
+    
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid padding">
+<div class="row padding">
 {% for instance in object_listwomen %}
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <h3> {{ instance.title }} </h3>
-      <p> Brand: {{ instance.brand }} <br />
-        <a href="{{instance.get_absolute_url}}"> <b> View & Buy Product </b> </a> <!-- use instance.url to place correct url -->
-      </p>
-      <img src="{{ instance.photo.url }}"> <!-- use instance.photo.url to place correct photo -->
+  <div class="col-md-2">
+    <div class="Card">
+      <img class="card-img-top" src = "{{ instance.photo.url }}" width="175" height="225">
+      <div class="card-body">
+        <h6 class="card-title">{{ instance.title }}</h6>
+        <p class="card-text">Brand: {{ instance.brand }} <br /> BDT {{ instance.price }}</p>
+        <a href = "{{instance.get_absolute_url}}" class="btn btn-outline-secondary">View Product</a>
+      </div>
     </div>
-  </div>
-  
-
+  </div>  
 {% endfor %}
+</div>
+</div>
 
-</section>
+
+<div class="container-fluid padding">
+<div class="row padding">
+<div class="hover10 column">
+  <div>
+    <h2>Brands</h2>
+    <img src="{% static 'img/ft.jpg' %}"/>
+
+    
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid padding">
+<div class="row padding">
+{% for instance in list_brands %}
+  <div class="col-md-2">
+    <div class="Card">
+      <img class="card-img-top" src = "{{ instance.photo.url }}" width="175" height="225">
+      <div class="card-body">
+        <h6 class="card-title">{{ instance.title }}</h6>
+        <p class="card-text"></p>
+        <a href = "{{ instance.link }}" class="btn btn-outline-secondary">View Brand</a>
+      </div>
+    </div>
+  </div>  
+{% endfor %}
+</div>
+</div>
+
 
 </body>
 
-<body>
 
-
-<section>
-
-<h4 align="center"> Brands </h4>
-  {% for instance in list_brands %}
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <h3> {{ instance.title }} </h3>
-      <p> {{ instance.description }} <br />
-        <a href="{{ instance.link }}"> <b> View Brand </b> </a> <!-- use instance.url to place correct url -->
-      </p>
-      <img src="{{ instance.photo.url }}"> <!-- use instance.photo.url to place correct photo -->
-    </div>
-  </div>
-  
-
-{% endfor %}
-</section>
-
-</body>
 
 {% endblock %}

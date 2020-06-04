@@ -25,6 +25,109 @@
 		  outline: 0;
 		  padding: 12px;
 		  color: black;
+		  background-color: #000000;
+		  text-align: center;
+		  cursor: pointer;
+		  width: 100%;
+		  font-size: 18px;
+		}
+
+		.group:before,
+		.group:after {
+		  content: "";
+		  display: table;
+		}
+		.group:after {
+		  clear: both;
+		}
+		.group {
+		  clear: both;
+		  *zoom: 1;
+		}
+
+		section {
+		  float: left;
+		  margin: 0 1.5%;
+		  width: 50%;
+		  clear: both;
+		}
+
+		aside {
+		  float: right;
+		  margin: 0 1.5%;
+		  width: 30%;
+		}
+
+
+		.card button:hover {
+		  opacity: 0.8;
+		}
+	</style>
+</head>
+
+
+<body>
+
+
+	<div class="group">
+
+		<section>
+
+
+			<h2 style="text-align:center">Product</h2>
+
+			{% if not request.user.is_authenticated %}
+            <p align="center"> You are not logged in, you cannot add to cart. <a href="http://127.0.0.1:8000/login/">Click here to login</a></p> 
+            {% endif %}
+
+
+			<div class="card">
+			  <img src="{{ object.photo.url }}" style="width:100%">
+			  <h1>{{ object.title }}</h1>
+			  <p class="price">Price: BDT {{ object.price }}</p>
+			  <p> Brand: {{ object.brand }}</p>
+			  <p><button> <a href="{{object.get_add_to_cart_url}}"> Add to Cart </a> </button><br />
+			  	<button><a href="{{object.get_remove_from_cart_url}}"> Remove from Cart </a></button>
+			  </p>
+			</div>
+
+		</section>
+
+		<aside>
+			<h3>Available Shops</h3>
+
+
+		</aside>
+
+	</div>
+
+</body>
+
+{% endblock %}
+
+
+
+
+<!-- <head>
+	<style>
+		.card {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  max-width: 400px;
+		  margin: auto;
+		  text-align: center;
+		  font-family: arial;
+		}
+
+		.price {
+		  color: grey;
+		  font-size: 22px;
+		}
+
+		.card button {
+		  border: none;
+		  outline: 0;
+		  padding: 12px;
+		  color: black;
 		  background-color: #C0C0C0;
 		  text-align: center;
 		  cursor: pointer;
@@ -96,9 +199,6 @@
 
 	</div>
 
-</body>
+</body> -->
 
-
-{% endblock %}
-
-
+<!-- 

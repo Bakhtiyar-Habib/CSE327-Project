@@ -77,5 +77,4 @@ class OrderSummaryView(View): #first class based view
         except ObjectDoesNotExist:
             return redirect("home")
 
-
         return render(self.request, "accounts/order_summary.html", context)
